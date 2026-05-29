@@ -1,24 +1,95 @@
 {
-  "expertises": [
+  "avis": [
     {
-      "icon": "<House size={28} color='#F97316' />",
-      "title": "Rénovation Intérieure",
-      "desc": "Cuisine, SDB, cloisons, parquet et plâtrerie."
+      "id": 1,
+      "nom": "Osman KARASU",
+      "note": 5,
+      "date": "il y a 6 mois",
+      "commentaire": "Nous avons fait appel à ce carreleur pour la pose du carrelage de notre salle de bain et nous sommes extrêmement satisfaits du résultat. Travail soigné."
     },
     {
-      "icon": "<Trees size={28} color='#F97316' />",
-      "title": "Aménagement Extérieur",
-      "desc": "Terrasses, allées, clôtures et portails."
+      "id": 2,
+      "nom": "K. M.",
+      "note": 5,
+      "date": "il y a 8 mois",
+      "commentaire": "Artisan très professionnel, avec une communication fluide et réactive. Travail soigné, de qualité, réalisé parfaitement. Je recommande vivement."
     },
     {
-      "icon": "<Thermometer size={28} color='#F97316' />",
-      "title": "Isolation & Thermique",
-      "desc": "Combles, murs, planchers. Éligible MaPrimeRénov"
+      "id": 3,
+      "nom": "Osman Aktay",
+      "note": 5,
+      "date": "il y a 11 mois",
+      "commentaire": "Artisan très professionnel, Seven est très minutieux et ponctuel dans son travail. Nous avions confié le placo, l'isolation, la peinture et le carrelage. Résultats irréprochables !"
     },
     {
-      "icon": "<PaintBucket size={28} color='#F97316' />",
-      "title": "Peinture & Finitions",
-      "desc": "Enduits, béton ciré, faïence et décoration."
+      "id": 4,
+      "nom": "esthevenin yuna",
+      "note": 5,
+      "date": "il y a un an",
+      "commentaire": "Artisan sérieux et méticuleux avec un très bon suivi de chantier et une très bonne communication de l'étude à la réalisation."
+    },
+    {
+      "id": 5,
+      "nom": "thibault Favre d'Echallens",
+      "note": 5,
+      "date": "il y a un an",
+      "commentaire": "Travail très soigné, rapide et de qualité. Notre crédence en travertin est superbe."
+    },
+    {
+      "id": 6,
+      "nom": "Teoman Tekin",
+      "note": 5,
+      "date": "il y a un an",
+      "commentaire": "Je recommande vivement le travail de 7Artisan. Travail minutieux et propre ! Qualité des finitions au rendez-vous. Artisan à l'écoute de mes besoins et force de proposition pour apporter des conseils éclairés."
+    },
+    {
+      "id": 7,
+      "nom": "benoit bouchenoire",
+      "note": 5,
+      "date": "il y a un an",
+      "commentaire": "Artisan très compétent, dynamique, très professionnel ! Je recommande, très satisfait !"
+    },
+    {
+      "id": 8,
+      "nom": "David Flores",
+      "note": 5,
+      "date": "il y a un an",
+      "commentaire": "Personne très sympathique, travail bien fait, entreprise très sérieuse. Je recommande 👍"
+    },
+    {
+      "id": 9,
+      "nom": "solfoot 87",
+      "note": 5,
+      "date": "il y a un an",
+      "commentaire": "Travail parfait et exceptionnel pour la qualité et le rendu, entreprise très à l'écoute et donne de bons conseils. Qualité prix imbattable, je conseille vivement."
+    },
+    {
+      "id": 10,
+      "nom": "Recep Karasu",
+      "note": 5,
+      "date": "il y a un an",
+      "commentaire": "Parfait rien à dire. Recommandez !"
+    },
+    {
+      "id": 11,
+      "nom": "Dilhan_87",
+      "note": 5,
+      "date": "il y a un an",
+      "commentaire": "À recommander, travail de qualité."
+    },
+    {
+      "id": 12,
+      "nom": "mehtap karasu",
+      "note": 5,
+      "date": "il y a un an",
+      "commentaire": "Travail de qualité !"
+    },
+    {
+      "id": 13,
+      "nom": "Marie-Laure Berthaud",
+      "note": 5,
+      "date": "il y a une semaine",
+      "commentaire": "M. GALISKAN est un professionnel sympathique qui réalise un travail sérieux et bien fini. Merci beaucoup !"
     }
   ]
 }

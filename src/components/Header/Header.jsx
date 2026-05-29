@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { Phone } from "lucide-react";
 import "./Header.scss";
 
 export function Header() {
@@ -9,7 +10,7 @@ export function Header() {
       </div>
       <Nav />
       <NavLink className="btn-devis" to="/contact">
-        <i class="fa-solid fa-phone"></i>
+        <Phone />
         Devis Gratuit
       </NavLink>
     </header>

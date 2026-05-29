@@ -1,14 +1,12 @@
 import "./Hero-Home.scss";
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 export function HeroHome() {
   return (
     <div className="hero-home">
       <div className="hero-left">
-        <div className="badge">
-          <i class="fa-solid fa-award"></i>
-          Artisan Qualifié RGE — Lyon & Région
-        </div>
+        <div className="badge">Artisan Qualifié RGE — Lyon & Région</div>
         <h1>
           Votre maison, <span>repensée</span> de A à Z
         </h1>
@@ -20,7 +18,7 @@ export function HeroHome() {
         <div className="buttons">
           <Link to="/contact" className="btn-devis">
             Demander un devis
-            <i class="fa-solid fa-arrow-right"></i>
+            <ArrowRight />
           </Link>
           <Link to="/realisations" className="btn-rea">
             Nos réalisations

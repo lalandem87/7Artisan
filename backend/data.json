@@ -1,0 +1,24 @@
+{
+  "expertises": [
+    {
+      "icon": "<House size={28} color='#F97316' />",
+      "title": "Rénovation Intérieure",
+      "desc": "Cuisine, SDB, cloisons, parquet et plâtrerie."
+    },
+    {
+      "icon": "<Trees size={28} color='#F97316' />",
+      "title": "Aménagement Extérieur",
+      "desc": "Terrasses, allées, clôtures et portails."
+    },
+    {
+      "icon": "<Thermometer size={28} color='#F97316' />",
+      "title": "Isolation & Thermique",
+      "desc": "Combles, murs, planchers. Éligible MaPrimeRénov"
+    },
+    {
+      "icon": "<PaintBucket size={28} color='#F97316' />",
+      "title": "Peinture & Finitions",
+      "desc": "Enduits, béton ciré, faïence et décoration."
+    }
+  ]
+}

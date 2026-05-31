@@ -28,6 +28,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 24px;
+        align-items: stretch;
         margin-top: 50px;
 
         .card {
@@ -56,11 +57,13 @@
 
             p {
                 color: #6B7280;
+                flex: 1;
             }
 
             a {
                 font-weight: bold;
                 color: #F97316;
+                margin-top: auto;
             }
         }
     }

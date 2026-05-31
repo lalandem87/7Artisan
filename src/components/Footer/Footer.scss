@@ -1,0 +1,117 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  color: #6b7280;
+  background-color: #0d1117;
+  padding: 64px 90px;
+
+  .top {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    justify-content: space-between;
+    border-bottom: 1px solid #6b7280;
+    padding-bottom: 50px;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      p {
+        max-width: 270px;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        a {
+          width: 36px;
+          height: 36px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #ffffff29;
+          border-radius: 16px;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      justify-content: space-between;
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        h4 {
+          color: #fff;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          li {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            list-style: none;
+
+            svg {
+              height: 15px;
+              width: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .status {
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 6px 12px;
+      border-radius: 16px;
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+
+      &.open {
+        background-color: #d1fae5;
+        color: #065f46;
+        .dot {
+          background-color: #10b981;
+        }
+      }
+
+      &.close {
+        background-color: #fee2e2;
+        color: #991b1b;
+        .dot {
+          background-color: #ef4444;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    .certifications {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}

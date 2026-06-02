@@ -1,4 +1,91 @@
 {
+  "services": [
+    {
+      "id": 0,
+      "badge": {
+        "name": "Rénovation",
+        "color": "#F97316",
+        "backcolor": "#FFF4EC"
+      },
+      "name": "Rénovation Intérieure",
+      "desc": "Transformation complète de vos espaces de vie — cuisine, salle de bain, cloisons, revêtements de sol et plafond. Nous prenons en charge l'intégralité du chantier.",
+      "lists": {
+        "backcolor": "#FFF4EC",
+        "list": [
+          "Cuisine & salle de bain",
+          "Cloisons & doublage",
+          "Parquet, carrelage, sol",
+          "Plâtrerie & plafonds"
+        ]
+      },
+
+      "image-url": "../../../backend/images/services/services1.png"
+    },
+    {
+      "id": 1,
+      "badge": {
+        "name": "Extérieur",
+        "color": "#2563EB",
+        "backcolor": "#EFF4FF"
+      },
+      "name": "Aménagement Extérieur",
+      "desc": "Valorisez votre extérieur avec des réalisations durables et esthétiques. Créez un espace de vie supplémentaire en plein air, pensé pour durer.",
+      "lists": {
+        "backcolor": "#EFF4FF",
+        "list": [
+          "Terrasse bois & composite",
+          "Allées & clôtures",
+          "Escaliers extérieurs",
+          "Portail & portillon"
+        ]
+      },
+
+      "image-url": "../../../backend/images/services/services2.png"
+    },
+    {
+      "id": 2,
+      "badge": {
+        "name": "Isolation RGE",
+        "color": "#0D1117",
+        "backcolor": "#FFFBEB"
+      },
+      "name": "Isolation & Thermique",
+      "desc": "Réduisez votre facture énergétique avec nos solutions d'isolation certifiées RGE. Améliorez le confort thermique de votre logement et bénéficiez des aides de l'État.",
+      "lists": {
+        "backcolor": "#FFFBEB",
+        "list": [
+          "Isolation des combles",
+          "ITE / Isolation des murs",
+          "Planchers bas",
+          "Éligible MaPrimeRénov'"
+        ]
+      },
+
+      "image-url": "../../../backend/images/services/services3.png"
+    },
+    {
+      "id": 3,
+      "badge": {
+        "name": "Finitions",
+        "color": "#6B7280",
+        "backcolor": "#F7F8FA"
+      },
+      "name": "Peinture & Finitions",
+      "desc": "Le soin des détails qui fait toute la différence. Des enduits, peintures et revêtements décoratifs de haute qualité pour sublimer chaque pièce de votre intérieur.",
+      "lists": {
+        "backcolor": "#F7F8FA",
+        "list": [
+          "Peinture intérieure",
+          "Enduits & béton ciré",
+          "Faïence & carrelage",
+          "Papier peint & déco"
+        ]
+      },
+
+      "image-url": "../../../backend/images/services/services4.png"
+    }
+  ],
+
   "avis": [
     {
       "id": 1,

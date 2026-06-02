@@ -34,7 +34,7 @@ export function ShowServices() {
                         style={{ background: service.lists.backcolor }}
                         key={id}
                       >
-                        <Check />
+                        <Check style={{ color: service.badge.color }} />
                         {item}
                       </li>
                     );

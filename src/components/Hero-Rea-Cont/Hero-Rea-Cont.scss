@@ -1,0 +1,28 @@
+.hero-rea-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px;
+  background-color: #f7f8fa;
+  border: 1px solid #e4e7ed;
+
+  .badge-section {
+    letter-spacing: 0.1em;
+    color: #f97316;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 52px;
+  }
+
+  p {
+    font-size: 20px;
+    color: #6b7280;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+}

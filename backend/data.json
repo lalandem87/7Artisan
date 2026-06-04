@@ -1,4 +1,15 @@
 {
+  "categories": [
+    {
+      "id": 0,
+      "name": "Extérieur"
+    },
+    {
+      "id": 1,
+      "name": "Intérieur"
+    }
+  ],
+
   "services": [
     {
       "id": 0,

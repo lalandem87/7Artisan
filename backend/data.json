@@ -86,6 +86,63 @@
     }
   ],
 
+  "valeurs": [
+    {
+      "id": 0,
+      "style-icon": {
+        "color": "#F97316",
+        "backcolor": "#FFF4EC"
+      },
+      "name": "Qualité & Rigueur",
+      "desc": "Chaque chantier est suivi avec la même attention aux détails. Nous n'acceptons pas les approximations."
+    },
+    {
+      "id": 1,
+      "style-icon": {
+        "color": "#2563EB",
+        "backcolor": "#EFF4FF"
+      },
+      "name": "Respect des délais",
+      "desc": "Nous planifions soigneusement chaque intervention et tenons nos engagements. Votre temps a de la valeur."
+    },
+    {
+      "id": 2,
+      "style-icon": {
+        "color": "#0D1117",
+        "backcolor": "#FFFBEB"
+      },
+      "name": "Transparence des prix",
+      "desc": "Devis détaillé et gratuit. Aucun surcoût caché. Le prix annoncé est celui que vous payez."
+    },
+    {
+      "id": 3,
+      "style-icon": {
+        "color": "#10B981",
+        "backcolor": "#ECFDF5"
+      },
+      "name": "Éco-responsabilité",
+      "desc": "Certifiés RGE, nous privilégions des matériaux durables et des solutions à faible impact environnemental."
+    },
+    {
+      "id": 4,
+      "style-icon": {
+        "color": "#F97316",
+        "backcolor": "#FFF4EC"
+      },
+      "name": "Accompagnement",
+      "desc": "Un interlocuteur unique du premier contact à la réception du chantier. Vous n'êtes jamais seul."
+    },
+    {
+      "id": 5,
+      "style-icon": {
+        "color": "#2563EB",
+        "backcolor": "#EFF4FF"
+      },
+      "name": "Satisfaction garantie",
+      "desc": "Nous ne partons pas tant que vous n'êtes pas entièrement satisfait. C'est notre promesse."
+    }
+  ],
+
   "avis": [
     {
       "id": 1,

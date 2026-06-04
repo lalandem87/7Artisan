@@ -29,7 +29,7 @@ export function Footer() {
           </div>
           <p>
             Artisan qualifié RGE, spécialiste de la rénovation intérieure et de
-            l'aménagement depuis 15 ans.
+            l'aménagement depuis 20 ans.
           </p>
           <div className="social-links">
             <a href="#">
@@ -58,15 +58,15 @@ export function Footer() {
             <ul>
               <li>
                 <Phone />
-                06 12 34 56 78
+                06 62 79 14 43
               </li>
               <li>
                 <Mail />
-                contact@artisanbat.fr
+                7artisan87100@gmail.com
               </li>
               <li>
                 <LocateIcon />
-                Limoges & 100 km
+                Limoges & Nouvelle-Aquitaine
               </li>
             </ul>
           </div>

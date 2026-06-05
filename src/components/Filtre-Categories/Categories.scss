@@ -3,6 +3,7 @@
   align-items: center;
   gap: 12px;
   padding: 20px 80px;
+  border-bottom: 1px solid #e4e7ed;
 
   .categorie {
     border: 1px solid #e4e7ed;
@@ -10,6 +11,7 @@
     padding: 8px 20px;
     background-color: #f7f8fa;
     color: #6b7280;
+    font-weight: bold;
 
     &.active,
     &:hover {

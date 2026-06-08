@@ -1,0 +1,69 @@
+.sliders {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 80px;
+}
+
+.container-sliders {
+  position: relative;
+
+  .top-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .badge-slider {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .dots-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  .slider {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+
+    .card-slider {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &-info {
+        padding: 20px;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.75), #00000078);
+        width: 100%;
+      }
+    }
+  }
+
+  .buttons-slider {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    button {
+      border-radius: 50%;
+      padding: 10px;
+    }
+  }
+
+  .bottom-slider {
+    text-align: center;
+  }
+}

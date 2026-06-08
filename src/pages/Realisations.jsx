@@ -1,14 +1,17 @@
 import { HeroReaCont } from "../components/Hero-Rea-Cont/Hero-Rea-Cont";
 import { BarreContact } from "../components/Barre-Contact/Barre-Contact";
-import { DisplayCategories } from "../components/Filtre-Categories/Categories.jsx";
-import { Portfolio } from "../components/Portfolio/Portfolio.jsx";
+import { Slider } from "../components/Slider/Slider.jsx";
 import { useState } from "react";
 import data from "../../backend/data.json";
 
-const works = data["works"];
+const insideWorks = data["works"].filter(
+  (work) => work.categorie.name === "Intérieur",
+);
+const outsideWorks = data["works"].filter(
+  (work) => work.categorie.name === "Extérieur",
+);
 
 export function Realisations() {
-  const [filtered, setFiltered] = useState(works);
   return (
     <>
       <HeroReaCont
@@ -17,8 +20,20 @@ export function Realisations() {
         desc="Découvrez une sélection de nos chantiers récents — chaque projet est
       unique et réalisé avec le même niveau d'exigence."
       />
-      <DisplayCategories work={works} onFilter={setFiltered} />
-      <Portfolio workToDisplay={filtered} />
+      <section className="sliders">
+        <Slider
+          badge="Intérieur"
+          title="Rénovation Intérieur"
+          works={insideWorks}
+          colorspan="#f97316"
+        />
+        <Slider
+          badge="Extérieur"
+          title="Aménagement Extérieur"
+          works={outsideWorks}
+          colorspan="#2563EB"
+        />
+      </section>
       <BarreContact
         title="Votre projet sera notre prochaine réalisation."
         sentence="Contactez-nous pour un échange gratuit et sans engagement."

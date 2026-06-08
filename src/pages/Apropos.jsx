@@ -5,7 +5,7 @@ import { Avis } from "../components/Avis/Avis";
 import { BarreContact } from "../components/Barre-Contact/Barre-Contact";
 import data from "../../backend/data.json";
 
-const dataAvis = data["avis"].slice(3, 6);
+const dataAvis = data["avis"];
 
 export function Apropos() {
   return (

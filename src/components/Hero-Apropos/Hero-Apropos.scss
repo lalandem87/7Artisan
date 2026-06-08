@@ -37,8 +37,9 @@
   }
 
   .right {
+    overflow: hidden;
     .img-container {
-      height: 650px;
+      height: 100%;
       width: 100%;
 
       img {

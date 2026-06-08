@@ -6,7 +6,7 @@ export function HeroHome() {
   return (
     <div className="hero-home">
       <div className="hero-left">
-        <div className="badge">Artisan Qualifié RGE — Lyon & Région</div>
+        <div className="badge">Artisan Qualifié — Limoges & International</div>
         <h1>
           Votre maison, <span>repensée</span> de A à Z
         </h1>

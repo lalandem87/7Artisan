@@ -149,14 +149,14 @@
         "backcolor": "#FFFBEB"
       },
       "name": "Isolation & Thermique",
-      "desc": "Réduisez votre facture énergétique avec nos solutions d'isolation certifiées RGE. Améliorez le confort thermique de votre logement et bénéficiez des aides de l'État.",
+      "desc": "Réduisez votre facture énergétique avec nos solutions d'isolation certifiées. Améliorez le confort thermique de votre logement",
       "lists": {
         "backcolor": "#FFFBEB",
         "list": [
           "Isolation des combles",
           "ITE / Isolation des murs",
           "Planchers bas",
-          "Éligible MaPrimeRénov'"
+          "Menuiserie"
         ]
       },
 

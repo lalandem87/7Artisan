@@ -9,16 +9,17 @@ export function HeroApropos() {
           L'artisanat au service <em>de vos projets</em>
         </h1>
         <p>
-          Fondée en 2009 par Marc Durand, ArtisanBat est une entreprise
-          familiale spécialisée dans la rénovation intérieure et l'aménagement.
-          Partis d'un atelier de 2 personnes, nous sommes aujourd'hui une équipe
-          de 12 compagnons qualifiés.
+          Depuis plus de 20 ans, 7Artisan accompagne ses clients dans leurs
+          projets de rénovation complète, d'aménagement et de transformation de
+          biens. Spécialisés dans les projets clé en main, nous prenons en
+          charge l'ensemble des étapes de votre chantier : étude du projet,
+          planification, coordination des intervenants et suivi des travaux
+          jusqu'à la livraison finale. Grâce à notre réseau de professionnels
+          qualifiés et à notre parfaite maîtrise de la coordination de tous les
+          corps de métier, nous garantissons une exécution fluide, des délais
+          maîtrisés et une qualité irréprochable à chaque étape.
         </p>
-        <p>
-          Notre philosophie : chaque client mérite un interlocuteur unique, un
-          suivi rigoureux et une finition irréprochable. C'est cette exigence
-          qui a bâti notre réputation dans la région lyonnaise.
-        </p>
+        <p></p>
       </div>
       <div className="right">
         <div className="img-container">

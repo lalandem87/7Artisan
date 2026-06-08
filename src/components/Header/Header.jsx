@@ -5,12 +5,13 @@ import "./Header.scss";
 export function Header() {
   return (
     <header>
-      <div className="main-logo">
-        <img src="" alt="" />
+      <div className="logo">
+        <span className="logo-7a">7A</span>
+        <span className="logo-rtisan">rtisan</span>
       </div>
       <Nav />
       <NavLink className="btn-devis" to="/contact">
-        <Phone />
+        <Phone height={20} />
         Devis Gratuit
       </NavLink>
     </header>

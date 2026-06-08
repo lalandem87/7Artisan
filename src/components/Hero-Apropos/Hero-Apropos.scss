@@ -1,4 +1,5 @@
 .hero-apropos {
+  height: calc(100vh - 21vh);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border: 1px solid #e4e7ed;

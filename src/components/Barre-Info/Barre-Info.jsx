@@ -7,7 +7,7 @@ export function BarreInfo() {
       <div className="container">
         <Briefcase size={28} color="#F97316" />
         <div className="infos">
-          <div className="title">15 ans</div>
+          <div className="title">20 ans</div>
           <div className="desc">d'expérience</div>
         </div>
       </div>
@@ -28,15 +28,15 @@ export function BarreInfo() {
       <div className="container">
         <Award size={28} color="#F97316" />
         <div className="infos">
-          <div className="title">RGE</div>
-          <div className="desc">certifié Qualibat</div>
+          <div className="title">Garantie</div>
+          <div className="desc">entreprise qualifiée</div>
         </div>
       </div>
       <div className="container">
         <MapPin size={28} color="#F97316" />
         <div className="infos">
           <div className="title">Limoges</div>
-          <div className="desc">& 100km</div>
+          <div className="desc">& International</div>
         </div>
       </div>
     </div>

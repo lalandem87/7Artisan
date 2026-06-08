@@ -25,7 +25,7 @@ const expertises = [
     icon: <Thermometer size={28} color="#0D1117" />,
     bg: "#FFFBEB",
     title: "Isolation & Thermique",
-    desc: "Combles, murs, planchers. Éligible MaPrimeRénov",
+    desc: "Combles, murs, planchers",
   },
   {
     icon: <PaintBucket size={28} color="#6B7280" />,

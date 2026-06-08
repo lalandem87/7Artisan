@@ -13,8 +13,7 @@ function useIsOpen() {
   const minutes = now.getMinutes();
   const time = hours + minutes / 60;
 
-  if (day >= 1 && day <= 5) return time >= 8 && time <= 18;
-  if (day === 6) return time >= 9 && time <= 13;
+  if (day >= 1 && day <= 6) return time >= 8 && time <= 18;
   return false;
 }
 
@@ -28,7 +27,7 @@ export function Footer() {
             <img src="" alt="" />
           </div>
           <p>
-            Artisan qualifié RGE, spécialiste de la rénovation intérieure et de
+            Artisan qualifié, spécialiste de la rénovation intérieure et de
             l'aménagement depuis 20 ans.
           </p>
           <div className="social-links">
@@ -66,7 +65,7 @@ export function Footer() {
               </li>
               <li>
                 <LocateIcon />
-                Limoges & Nouvelle-Aquitaine
+                Limoges & International
               </li>
             </ul>
           </div>
@@ -74,7 +73,7 @@ export function Footer() {
             <h4>Horaires</h4>
             <ul>
               <li>Lundi – Vendredi : 8h – 18h</li>
-              <li>Samedi : 9h – 13h</li>
+              <li>Samedi : 8h – 18h</li>
               <li>Dimanche : Fermé</li>
               <li className={`status ${isOpen ? "open" : "close"}`}>
                 <span className="dot"></span>
@@ -87,8 +86,8 @@ export function Footer() {
       <div className="bottom">
         <p>© 2026 7Artisan. Tous droits réservés.</p>
         <div className="certifications">
-          <div className="">Certifié RGE</div>
-          <div className="">Qualibat</div>
+          <div className="">Qualifié</div>
+          <div className=""></div>
           <div className="">Assurance décennale</div>
         </div>
       </div>

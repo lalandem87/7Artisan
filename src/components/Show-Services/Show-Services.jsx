@@ -40,7 +40,7 @@ export function ShowServices() {
                     );
                   })}
                 </ul>
-                <Link to="contact">
+                <Link to="/contact">
                   En savoir plus <ArrowRight />
                 </Link>
               </div>

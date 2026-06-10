@@ -5,6 +5,24 @@ footer {
   background-color: #0d1117;
   padding: 64px 90px;
 
+  .logo {
+    font-family: "Arial Black", Arial, sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+
+    .logo-7a {
+      color: #f97316;
+      text-shadow:
+        0 0 20px rgba(249, 115, 22, 0.8),
+        0 0 40px rgba(249, 115, 22, 0.4);
+    }
+
+    .logo-rtisan {
+      color: #1a1a1a;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    }
+  }
+
   .top {
     display: grid;
     grid-template-columns: 0.5fr 1fr;

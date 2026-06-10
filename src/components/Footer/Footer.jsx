@@ -23,8 +23,9 @@ export function Footer() {
     <footer>
       <div className="top">
         <div className="left">
-          <div className="main-logo">
-            <img src="" alt="" />
+          <div className="logo">
+            <span className="logo-7a">7A</span>
+            <span className="logo-rtisan">rtisan</span>
           </div>
           <p>
             Artisan qualifié, spécialiste de la rénovation intérieure et de

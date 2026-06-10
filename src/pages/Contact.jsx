@@ -1,5 +1,6 @@
 import { HeroReaCont } from "../components/Hero-Rea-Cont/Hero-Rea-Cont";
 import { Form } from "../components/Form/Form";
+import { BarreInfoContact } from "../components/Barre-Info-Contact/Barre-Info-Contact";
 
 export function Contact() {
   return (
@@ -14,6 +15,7 @@ export function Contact() {
         colorP="#ffffffa8"
       />
       <Form />
+      <BarreInfoContact />
     </>
   );
 }

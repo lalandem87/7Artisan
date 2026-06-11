@@ -133,3 +133,29 @@ footer {
     }
   }
 }
+
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 20px;
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 35px;
+
+      h4 {
+        margin-top: 25px;
+      }
+
+      .right {
+        flex-direction: column;
+      }
+    }
+
+    .bottom {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 35px;
+    }
+  }
+}

@@ -40,7 +40,11 @@ header {
 
 @media (max-width: 768px) {
   header {
-    padding: 0 16px;
+    padding: 10px 16px;
+
+    .logo {
+      font-size: 26px;
+    }
   }
 
   .btn-devis {

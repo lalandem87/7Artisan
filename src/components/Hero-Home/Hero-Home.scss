@@ -159,6 +159,10 @@
     .hero-left {
       gap: 20px;
 
+      .badge {
+        font-size: 12px;
+      }
+
       h1 {
         font-size: 40px;
       }
@@ -172,6 +176,11 @@
         font-size: 16px;
         flex-direction: column;
         width: 100%;
+
+        .btn-devis-hero {
+          padding: 14px;
+          border-radius: 24px;
+        }
 
         a {
           justify-content: center;

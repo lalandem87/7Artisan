@@ -61,7 +61,7 @@ export function Slider({ badge, title, works, colorspan }) {
         </button>
       </div>
       <div className="bottom-slider">
-        {counter} - {works.length - 3} réalisations
+        {counter} — {works.length - 3} réalisations
       </div>
     </div>
   );

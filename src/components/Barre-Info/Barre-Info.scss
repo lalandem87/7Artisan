@@ -33,3 +33,9 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .barre-info {
+    display: none;
+  }
+}

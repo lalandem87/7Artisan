@@ -23,34 +23,6 @@ header {
   }
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-
-  .nav-link {
-    font-size: 16px;
-    font-weight: 500;
-    color: #6b7280;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-
-  .nav-link:hover {
-    color: #f97316;
-    background-color: #fff4ec;
-    padding: 8px 16px;
-    border-radius: 16px;
-  }
-
-  .nav-link.active {
-    color: #f97316;
-    background-color: #fff4ec;
-    padding: 8px 16px;
-    border-radius: 16px;
-  }
-}
-
 .btn-devis {
   display: flex;
   gap: 5px;
@@ -63,5 +35,16 @@ nav {
 
   &:hover {
     transform: scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 16px;
+  }
+
+  .btn-devis {
+    font-size: 12px;
+    padding: 6px 12px;
   }
 }

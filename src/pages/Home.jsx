@@ -1,5 +1,6 @@
 import { HeroHome } from "../components/Hero-Home/Hero-Home";
 import { BarreInfo } from "../components/Barre-Info/Barre-Info";
+import { BarreInfoMobile } from "../components/Barre-Info-Mobile/Barre-Info-Mobile";
 import { Expertise } from "../components/Expertise/Expertise";
 import { Avis } from "../components/Avis/Avis";
 import { BarreContact } from "../components/Barre-Contact/Barre-Contact";
@@ -12,6 +13,7 @@ export function Home() {
     <>
       <HeroHome />
       <BarreInfo />
+      <BarreInfoMobile />
       <Expertise />
       <Avis
         badge="Ils nous font confiance"

@@ -150,3 +150,44 @@
   padding-bottom: 48px;
   margin-bottom: 8px;
 }
+
+@media (max-width: 768px) {
+  .sliders {
+    padding: 32px 20px;
+
+    .container-sliders {
+      .top-slider {
+        .dots-wrapper {
+          .dot {
+            width: 8px;
+            height: 8px;
+
+            &.active {
+              width: 10px;
+              height: 10px;
+            }
+          }
+        }
+        h3 {
+          max-width: 150px;
+        }
+      }
+      .slider {
+        grid-template-columns: 1.5fr 0.5fr;
+
+        .card-slider {
+          height: 300px;
+        }
+      }
+
+      .bottom-slider {
+        font-weight: 700;
+
+        button {
+          width: 36px;
+          height: 36px;
+        }
+      }
+    }
+  }
+}

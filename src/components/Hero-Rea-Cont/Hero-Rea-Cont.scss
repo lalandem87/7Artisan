@@ -26,3 +26,21 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 768px) {
+  .hero-rea-cont {
+    padding: 40px 20px;
+
+    .badge-section {
+      font-size: 12px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}

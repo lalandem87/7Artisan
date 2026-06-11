@@ -5,7 +5,10 @@ import { Fragment, useState } from "react";
 
 export function Slider({ badge, title, works, colorspan }) {
   const [counter, setCounter] = useState(0);
-  const visible = works.slice(counter, counter + 3);
+  const visible =
+    window.innerWidth <= 768
+      ? works.slice(counter, counter + 2)
+      : works.slice(counter, counter + 3);
   return (
     <div className="container-sliders">
       <div className="top-slider">
@@ -16,7 +19,7 @@ export function Slider({ badge, title, works, colorspan }) {
           <h3>{title}</h3>
         </div>
         <div className="dots-wrapper">
-          {visible.map((_, index) => {
+          {works.map((_, index) => {
             return (
               <div
                 className={`dot ${index === counter ? "active" : ""}`}

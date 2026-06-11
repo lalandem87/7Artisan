@@ -254,3 +254,51 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .contact-devis {
+    padding: 28px 20px;
+
+    .container-form {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .form-right {
+        padding: 32px 20px;
+        form {
+          .row-buttons {
+            .buttons {
+              grid-template-columns: repeat(2, 1fr);
+
+              button {
+                padding: 10px;
+              }
+            }
+          }
+          .rows {
+            grid-template-columns: 1fr;
+            gap: 0;
+          }
+
+          .form-bottom {
+            flex-direction: column;
+
+            button {
+              font-size: 16px;
+              padding: 16px;
+
+              svg {
+                width: 15px;
+                height: 15px;
+              }
+            }
+            p {
+              flex-direction: row;
+            }
+          }
+        }
+      }
+    }
+  }
+}

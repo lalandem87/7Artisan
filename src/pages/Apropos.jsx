@@ -1,5 +1,6 @@
 import { HeroApropos } from "../components/Hero-Apropos/Hero-Apropos";
 import { BarreInfo } from "../components/Barre-Info/Barre-Info";
+import { BarreInfoMobile } from "../components/Barre-Info-Mobile/Barre-Info-Mobile";
 import { SecValeurs } from "../components/Sec-Valeurs/Sec-Valeurs";
 import { Avis } from "../components/Avis/Avis";
 import { BarreContact } from "../components/Barre-Contact/Barre-Contact";
@@ -12,6 +13,7 @@ export function Apropos() {
     <>
       <HeroApropos />
       <BarreInfo />
+      <BarreInfoMobile />
       <SecValeurs />
       <Avis
         badge="Avis clients"

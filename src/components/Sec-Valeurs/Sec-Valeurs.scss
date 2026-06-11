@@ -49,3 +49,45 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .valeurs {
+    padding: 40px 20px;
+
+    .badge-section {
+      font-size: 12px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    .container-card {
+      grid-template-columns: 1fr;
+      margin-top: 25px;
+
+      .card-valeur {
+        gap: 8px;
+        padding: 20px;
+
+        .icon-wrapper {
+          height: 44px;
+          width: 44px;
+
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        h3 {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

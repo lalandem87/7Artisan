@@ -16,14 +16,12 @@ export function Slider({ badge, title, works, colorspan }) {
           <h3>{title}</h3>
         </div>
         <div className="dots-wrapper">
-          {works.map((_, index) => {
+          {visible.map((_, index) => {
             return (
               <div
                 className={`dot ${index === counter ? "active" : ""}`}
                 key={index}
-              >
-                .
-              </div>
+              ></div>
             );
           })}
         </div>

@@ -11,8 +11,9 @@ import {
   ShieldCheck,
   Navigation,
 } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./Form.scss";
+import emailjs from "@emailjs/browser";
 
 export function Form() {
   const [budget, setBudget] = useState(null);
@@ -22,6 +23,21 @@ export function Form() {
     "15 000 – 30 000 €",
     "> 30 000 €",
   ];
+
+  const formRef = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("SERVICE_ID", "TEMPLATE_ID", formRef.current, "PUBLIC_KEY")
+      .then(() => {
+        return alert("Message envoyé !");
+      })
+      .catch((e) => {
+        return alert(`Erreur: ${e}, réessayez.`);
+      });
+  };
   return (
     <section className="contact-devis">
       <div className="container-form">
@@ -99,7 +115,7 @@ export function Form() {
             Remplissez ce formulaire, nous vous rappelons sous 48h pour affiner
             votre projet.
           </p>
-          <form action="" method="post">
+          <form action="" method="post" onSubmit={handleSubmit} ref={formRef}>
             <div className="rows">
               <div className="row">
                 <label htmlFor="prenom">Prénom</label>
@@ -139,10 +155,10 @@ export function Form() {
               <label htmlFor="type">Type de travaux</label>
               <select name="type" id="type">
                 <option value="">Sélectionnez votre besoin</option>
-                <option value="">Intérieur</option>
-                <option value="">Extérieur</option>
-                <option value="">Isolation</option>
-                <option value="">Peinture</option>
+                <option value="interieur">Intérieur</option>
+                <option value="exterieur">Extérieur</option>
+                <option value="isolation">Isolation</option>
+                <option value="peinture">Peinture</option>
               </select>
             </div>
             <div className="row">

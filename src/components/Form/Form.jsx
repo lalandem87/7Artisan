@@ -105,6 +105,7 @@ export function Form() {
                 <div className="certif-card-logo check">
                   <CircleCheck size={20} />
                 </div>
+                Qualité garantie
               </li>
             </ul>
           </div>

@@ -45,9 +45,9 @@ export function BarreInfoMobile() {
           <Award />
         </div>
         <div className="barre-info-mobile-wrapper-infos">
-          <div className="barre-info-mobile-wrapper-infos-title">RGE</div>
+          <div className="barre-info-mobile-wrapper-infos-title">Qualité</div>
           <div className="barre-info-mobile-wrapper-infos-desc">
-            certifié Qualibat
+            entreprise qualifié
           </div>
         </div>
       </div>

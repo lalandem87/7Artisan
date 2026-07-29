@@ -53,6 +53,14 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .valeurs {
+    .container-card {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .valeurs {
     padding: 40px 20px;

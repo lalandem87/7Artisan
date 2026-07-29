@@ -25,6 +25,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .barre-info-contact {
+    padding: 40px 100px;
+  }
+}
+
 @media (max-width: 768px) {
   .barre-info-contact {
     display: grid;

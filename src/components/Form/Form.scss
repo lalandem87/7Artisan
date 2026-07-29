@@ -241,6 +241,43 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .contact-devis {
+    padding: 50px;
+
+    .container-form {
+      gap: 24px;
+
+      .form-left {
+        .location-card-top {
+          padding: 54px 80px;
+        }
+
+        .location-card-bottom {
+          gap: 10px;
+        }
+      }
+
+      .form-right {
+        padding: 25px;
+
+        form {
+          .row {
+            gap: 18px;
+          }
+          .row-buttons {
+            .buttons {
+              button {
+                padding: 6px 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .contact-devis {
     padding: 28px 20px;

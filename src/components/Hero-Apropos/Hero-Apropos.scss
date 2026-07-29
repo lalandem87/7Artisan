@@ -52,6 +52,20 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .hero-apropos {
+    height: 80vh;
+
+    .left {
+      padding: 23px 30px;
+      gap: 15px;
+    }
+    .right {
+      height: 653px;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .hero-apropos {
     display: flex;

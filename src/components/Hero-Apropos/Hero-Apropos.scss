@@ -12,7 +12,7 @@
 
     .badge-section {
       letter-spacing: 0.1em;
-      color: #f97316;
+      color: var(--maincolor);
       text-transform: uppercase;
       font-weight: bold;
     }
@@ -25,7 +25,7 @@
 
       em {
         font-family: "Space Grostek", sans-serif;
-        color: #f97316;
+        color: var(--maincolor);
       }
     }
 

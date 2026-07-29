@@ -19,13 +19,14 @@ export function Realisations() {
         title="Nos Réalisations"
         desc="Découvrez une sélection de nos chantiers récents — chaque projet est
       unique et réalisé avec le même niveau d'exigence."
+        backColor="#f8f4f5"
       />
       <section className="sliders">
         <Slider
           badge="Intérieur"
           title="Rénovation Intérieur"
           works={insideWorks}
-          colorspan="#f97316"
+          colorspan="#b94f04"
         />
         <Slider
           badge="Extérieur"

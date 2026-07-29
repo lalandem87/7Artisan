@@ -1,7 +1,10 @@
-import { Home, Trees, PaintBucket, Thermometer } from "lucide-react";
+import { useState } from "react";
 import "./Hero-Service.scss";
+import data from "../../../backend/data.json";
 
 export function HeroServices() {
+  const catServices = data["categorieServices"];
+  const [kindService, setKindService] = useState(null);
   return (
     <div className="hero-services">
       <div className="left">
@@ -14,22 +17,17 @@ export function HeroServices() {
       </div>
       <div className="right">
         <div className="container-card">
-          <div className="card">
-            <Home />
-            Rénovation intérieure
-          </div>
-          <div className="card">
-            <Trees />
-            Aménagement extérieur
-          </div>
-          <div className="card">
-            <Thermometer />
-            Isolation & thermique
-          </div>
-          <div className="card">
-            <PaintBucket />
-            Peinture & finitions
-          </div>
+          {catServices.map((cs) => (
+            <a
+              href={`#${cs.id}`}
+              key={cs.id}
+              className={`card ${kindService === cs.id ? "active" : ""}`}
+              onClick={() => setKindService(cs.id)}
+            >
+              <span>{cs.icon}</span>
+              {cs.label}
+            </a>
+          ))}
         </div>
       </div>
     </div>

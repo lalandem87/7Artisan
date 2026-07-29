@@ -49,9 +49,9 @@ export function HeroHome() {
         <div className="title">Réponse sous 48h</div>
         <p>Décrivez votre projet, nous vous rappelons rapidement.</p>
         <form action="post" ref={formRef} onSubmit={handleSubmit}>
-          <input type="text" placeholder="Votre nom complet" />
-          <input type="tel" placeholder="Votre téléphone" />
-          <select name="type" id="">
+          <input type="text" placeholder="Votre nom complet" id="nom" />
+          <input type="tel" placeholder="Votre téléphone" id="phone" />
+          <select name="type" id="type">
             <option value="">Type de travaux</option>
             <option value="interieur">Intérieur</option>
             <option value="exterieur">Extérieur</option>

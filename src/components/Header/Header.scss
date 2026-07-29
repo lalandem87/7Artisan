@@ -5,20 +5,15 @@ header {
   padding: 20px 80px;
 
   .logo {
-    font-family: "Arial Black", Arial, sans-serif;
-    font-weight: 900;
-    font-size: 32px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 800;
+    font-size: 21px;
+    letter-spacing: -0.02em;
+    color: oklch(0.2 0.01 260);
+    text-decoration: none;
 
-    .logo-7a {
-      color: #f97316;
-      text-shadow:
-        0 0 20px rgba(249, 115, 22, 0.8),
-        0 0 40px rgba(249, 115, 22, 0.4);
-    }
-
-    .logo-rtisan {
-      color: #1a1a1a;
-      text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    span {
+      color: var(--maincolor);
     }
   }
 
@@ -38,7 +33,7 @@ header {
   gap: 5px;
   align-items: center;
   padding: 10px 24px;
-  background-color: #f97316;
+  background-color: var(--maincolor);
   color: #fff;
   border-radius: 16px;
   font-weight: bold;

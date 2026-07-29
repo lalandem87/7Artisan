@@ -1,10 +1,10 @@
 .expertise {
-  background-color: #f7f8fa;
+  background-color: #f8f4f5;
   padding: 80px;
 
   .badge-section {
+    color: #b94f04;
     letter-spacing: 0.1em;
-    color: #f97316;
     text-transform: uppercase;
     font-weight: bold;
   }
@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #f97316;
+    color: #b94f04;
     font-weight: bold;
     justify-content: flex-end;
   }
@@ -45,8 +45,9 @@
         justify-content: center;
         width: 52px;
         height: 52px;
-        border-radius: 50%;
+        border-radius: 14px;
         margin-bottom: 16px;
+        font-size: 23px;
       }
 
       h3 {
@@ -63,7 +64,7 @@
         align-items: center;
         gap: 4px;
         font-weight: bold;
-        color: #f97316;
+        color: var(--maincolor);
         margin-top: auto;
       }
     }
@@ -96,11 +97,6 @@
           width: 40px;
           height: 40px;
           margin-bottom: 0;
-
-          svg {
-            width: 20px;
-            height: 20px;
-          }
         }
         h3 {
           font-size: 16px;

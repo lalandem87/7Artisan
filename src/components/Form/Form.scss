@@ -50,15 +50,15 @@
             }
 
             &-logo.phone {
-              background-color: #fff4ec;
+              background-color: #fcd4c3;
             }
 
             &-logo.mail {
-              background-color: #eff4ff;
+              background-color: #c4daf2;
             }
 
             &-logo.mapin {
-              background-color: #fffbeb;
+              background-color: #eadeb2;
             }
 
             &-info {
@@ -107,20 +107,6 @@
           justify-content: center;
           align-items: center;
           border-radius: 50%;
-
-          &.award {
-            background-color: #fffbeb;
-          }
-
-          &.shield {
-            color: #2563eb;
-            background-color: #eff4ff;
-          }
-
-          &.check {
-            color: #10b981;
-            background-color: #ecfdf5;
-          }
         }
 
         ul {
@@ -207,9 +193,9 @@
 
               &.active {
                 font-weight: bold;
-                color: #f97316;
+                color: var(--maincolor);
                 background-color: #fff4ec;
-                border: 1px solid #f97316;
+                border: 1px solid var(--maincolor);
               }
             }
           }
@@ -228,7 +214,7 @@
             gap: 6px;
             font-weight: bold;
             color: #fff;
-            background-color: #f97316;
+            background-color: var(--maincolor);
             border-radius: 24px;
             border: 0;
             padding: 16px 0;

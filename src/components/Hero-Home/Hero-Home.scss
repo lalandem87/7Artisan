@@ -39,7 +39,7 @@
       font-size: 14px;
       font-weight: 600;
       padding: 8px 16px;
-      background-color: #f97316;
+      background-color: var(--maincolor);
       width: fit-content;
       border-radius: 33px;
       color: #fff;
@@ -52,13 +52,13 @@
       color: #fff;
 
       span {
-        color: #f97316;
+        color: var(--maincolor);
       }
     }
 
     p {
       font-size: 20px;
-      color: #ffffffbe;
+      color: #ffffffd1;
       line-height: 32px;
     }
 
@@ -77,10 +77,9 @@
         display: flex;
         gap: 5px;
         align-items: center;
-        padding: 10px 24px;
-        background-color: #f97316;
+        background-color: var(--maincolor);
         color: #fff;
-        border-radius: 16px;
+        border-radius: 24px;
         font-weight: bold;
 
         &:hover {
@@ -142,7 +141,7 @@
     button {
       font-weight: bold;
       color: #fff;
-      background-color: #f97316;
+      background-color: var(--maincolor);
       padding: 12px 0;
       border-radius: 16px;
       border: 0;

@@ -5,27 +5,19 @@ export function BarreInfoContact() {
   return (
     <section className="barre-info-contact">
       <div className="barre-info-contact-container">
-        <div className="barre-info-contact-container-logo">
-          <Clock />
-        </div>
+        <div className="barre-info-contact-container-logo">⏱️</div>
         <p>Réponse sous 48h</p>
       </div>
       <div className="barre-info-contact-container">
-        <div className="barre-info-contact-container-logo">
-          <Euro />
-        </div>
+        <div className="barre-info-contact-container-logo">€</div>
         <p>Devis 100% gratuit</p>
       </div>
       <div className="barre-info-contact-container">
-        <div className="barre-info-contact-container-logo">
-          <Handshake />
-        </div>
+        <div className="barre-info-contact-container-logo">🤝</div>
         <p>Sans engagement</p>
       </div>
       <div className="barre-info-contact-container">
-        <div className="barre-info-contact-container-logo">
-          <ShieldCheck />
-        </div>
+        <div className="barre-info-contact-container-logo">🛡️</div>
         <p>Artisan assuré</p>
       </div>
     </section>

@@ -1,8 +1,10 @@
 .sliders {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 40px 80px;
+  padding: 60px 80px;
 }
 
 .container-sliders {
@@ -20,7 +22,7 @@
       text-transform: uppercase;
       font-size: 12px;
       letter-spacing: 0.1em;
-      color: #f97316;
+      color: var(--maincolor);
     }
 
     h3 {
@@ -42,7 +44,7 @@
         transition: background-color 0.2s;
 
         &.active {
-          background-color: #f97316;
+          background-color: var(--maincolor);
           width: 24px;
           border-radius: 4px;
         }
@@ -54,7 +56,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    padding: 0 60px;
+    padding: 0 15px;
 
     .card-slider {
       height: 380px;
@@ -85,6 +87,7 @@
         border-bottom-right-radius: 16px;
 
         em {
+          text-transform: uppercase;
           font-style: normal;
           font-size: 14px;
           font-weight: bold;
@@ -133,7 +136,7 @@
     #arrow-right {
       border: 0;
       color: #fff;
-      background-color: #f97316;
+      background-color: var(--maincolor);
     }
   }
 

@@ -1,11 +1,11 @@
 .valeurs {
-  background-color: #f7f8fa;
+  background-color: #f8f4f5;
   padding: 80px;
 
   .badge-section {
     display: inline-block;
     letter-spacing: 0.1em;
-    color: #f97316;
+    color: #b94f04;
     text-transform: uppercase;
     font-weight: bold;
     width: 100%;
@@ -19,6 +19,8 @@
   }
 
   .container-card {
+    max-width: 1440px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
@@ -40,6 +42,7 @@
         height: 48px;
         width: 48px;
         border-radius: 50%;
+        font-size: 21px;
       }
 
       p {

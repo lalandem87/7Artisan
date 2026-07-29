@@ -51,20 +51,25 @@ export function Slider({ badge, title, works, colorspan }) {
       </div>
       <div className="buttons-slider">
         <button
-          onClick={() => setCounter((c) => Math.max(0, c - 1))}
+          onClick={() => {
+            setCounter((c) => Math.max(0, c - 1));
+          }}
           id="arrow-left"
         >
           <ArrowLeft />
         </button>
         <button
-          onClick={() => setCounter((c) => Math.min(works.length - 3, c + 1))}
+          onClick={() => {
+            setCounter((c) => Math.min(works.length - 3, c + 1));
+          }}
           id="arrow-right"
         >
           <ArrowRight />
         </button>
       </div>
       <div className="bottom-slider">
-        {counter} — {works.length - 3} réalisations
+        {counter + 1} — {Math.min(counter + 3, works.length)} réalisations sur{" "}
+        {works.length}
       </div>
     </div>
   );

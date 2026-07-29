@@ -1,3 +1,7 @@
+:root {
+  --maincolor: #c35404;
+}
+
 * {
   font-family: "Inter", sans-serif;
   box-sizing: border-box;

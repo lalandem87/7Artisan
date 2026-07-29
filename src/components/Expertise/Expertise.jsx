@@ -1,41 +1,10 @@
 import { Link } from "react-router-dom";
 import "./Expertise.scss";
-import {
-  ArrowRight,
-  House,
-  Trees,
-  Thermometer,
-  PaintBucket,
-} from "lucide-react";
-
-const expertises = [
-  {
-    icon: <House size={28} color="#F97316" />,
-    bg: "#FFF4EC",
-    title: "Rénovation Intérieure",
-    desc: "Cuisine, SDB, cloisons, parquet et plâtrerie.",
-  },
-  {
-    icon: <Trees size={28} color="#2563EB" />,
-    bg: "#EFF4FF",
-    title: "Aménagement Extérieur",
-    desc: "Terrasses, allées, clôtures et portails.",
-  },
-  {
-    icon: <Thermometer size={28} color="#0D1117" />,
-    bg: "#FFFBEB",
-    title: "Isolation & Thermique",
-    desc: "Combles, murs, planchers",
-  },
-  {
-    icon: <PaintBucket size={28} color="#6B7280" />,
-    bg: "#F7F8FA",
-    title: "Peinture & Finitions",
-    desc: "Enduits, béton ciré, faïence et décoration.",
-  },
-];
+import data from "../../../backend/data.json";
+import { ArrowRight } from "lucide-react";
 
 export function Expertise() {
+  const expertises = data["expertise"];
   return (
     <section className="expertise">
       <span className="badge-section">ce que nous faisons</span>

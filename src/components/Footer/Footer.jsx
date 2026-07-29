@@ -1,4 +1,3 @@
-import { LocateIcon, Mail, Phone } from "lucide-react";
 import "./Footer.scss";
 import {
   SiInstagram,
@@ -24,8 +23,8 @@ export function Footer() {
       <div className="top">
         <div className="left">
           <div className="logo">
-            <span className="logo-7a">7A</span>
-            <span className="logo-rtisan">rtisan</span>
+            <span className="logo_7a">7A</span>
+            <span className="logo_rtisan">rtisan</span>
           </div>
           <p>
             Artisan qualifié, spécialiste de la rénovation intérieure et de
@@ -56,18 +55,9 @@ export function Footer() {
           <div className="list">
             <h4>Contact</h4>
             <ul>
-              <li>
-                <Phone />
-                06 62 79 14 43
-              </li>
-              <li>
-                <Mail />
-                7artisan87100@gmail.com
-              </li>
-              <li>
-                <LocateIcon />
-                Limoges & International
-              </li>
+              <li>📞 06 62 79 14 43</li>
+              <li>✉️ 7artisan87100@gmail.com</li>
+              <li>📍 Limoges & International</li>
             </ul>
           </div>
           <div className="list">
@@ -76,10 +66,10 @@ export function Footer() {
               <li>Lundi – Vendredi : 8h – 18h</li>
               <li>Samedi : 8h – 18h</li>
               <li>Dimanche : Fermé</li>
-              <li className={`status ${isOpen ? "open" : "close"}`}>
+              <div className={`status ${isOpen ? "open" : "close"}`}>
                 <span className="dot"></span>
                 {isOpen ? "Ouvert" : "Fermé"}
-              </li>
+              </div>
             </ul>
           </div>
         </div>

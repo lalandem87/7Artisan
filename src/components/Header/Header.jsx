@@ -9,10 +9,10 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header>
-      <div className="logo">
-        <span className="logo-7a">7A</span>
-        <span className="logo-rtisan">rtisan</span>
-      </div>
+      <NavLink className="logo" to="/">
+        <span>7A</span>
+        rtisan
+      </NavLink>
       <Nav />
       <NavLink className="btn-devis" to="/contact">
         <Phone height={20} />

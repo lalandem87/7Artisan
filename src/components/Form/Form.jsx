@@ -1,16 +1,5 @@
 import { SiCursor } from "@icons-pack/react-simple-icons";
-import {
-  Award,
-  CircleCheck,
-  LockIcon,
-  Mail,
-  Map,
-  MapPin,
-  Phone,
-  Send,
-  ShieldCheck,
-  Navigation,
-} from "lucide-react";
+import { Mail, Map, Navigation, Send, LockIcon } from "lucide-react";
 import { useRef, useState } from "react";
 import "./Form.scss";
 import emailjs from "@emailjs/browser";
@@ -30,7 +19,12 @@ export function Form() {
     e.preventDefault();
 
     emailjs
-      .sendForm("SERVICE_ID", "TEMPLATE_ID", formRef.current, "PUBLIC_KEY")
+      .sendForm(
+        "service_vh3mb7e",
+        "template_ozu164b",
+        formRef.current,
+        "K5MerjZpHE1Y-h3RX",
+      )
       .then(() => {
         return alert("Message envoyé !");
       })
@@ -46,9 +40,7 @@ export function Form() {
             <h3>Nos coordonées</h3>
             <div className="wrapper">
               <div className="wrapper-infos">
-                <div className="wrapper-infos-logo phone">
-                  <Phone color="#F97316" size={20} />
-                </div>
+                <div className="wrapper-infos-logo phone">📞</div>
                 <div className="wrapper-infos-info">
                   <h4>Téléphone</h4>
                   <p>06 62 79 14 43</p>
@@ -56,9 +48,7 @@ export function Form() {
                 </div>
               </div>
               <div className="wrapper-infos">
-                <div className="wrapper-infos-logo mail">
-                  <Mail color="#2563EB" size={20} />
-                </div>
+                <div className="wrapper-infos-logo mail">✉️</div>
                 <div className="wrapper-infos-info">
                   <h4>Email</h4>
                   <p>7artisan87100@gmail.com</p>
@@ -66,9 +56,7 @@ export function Form() {
                 </div>
               </div>
               <div className="wrapper-infos">
-                <div className="wrapper-infos-logo mapin">
-                  <MapPin color="#0D1117" size={20} />
-                </div>
+                <div className="wrapper-infos-logo mapin">📍</div>
                 <div className="wrapper-infos-info">
                   <h4>Zone d'intervention</h4>
                   <p>Limoges & International</p>
@@ -90,21 +78,15 @@ export function Form() {
             <h3>Certifications</h3>
             <ul>
               <li>
-                <div className="certif-card-logo award">
-                  <Award size={20} />
-                </div>
+                <div className="certif-card-logo award">🎖️</div>
                 Qualifié
               </li>
               <li>
-                <div className="certif-card-logo shield">
-                  <ShieldCheck size={20} />
-                </div>
+                <div className="certif-card-logo shield">🛡️</div>
                 Assurance décennale
               </li>
               <li>
-                <div className="certif-card-logo check">
-                  <CircleCheck size={20} />
-                </div>
+                <div className="certif-card-logo check">✅</div>
                 Qualité garantie
               </li>
             </ul>

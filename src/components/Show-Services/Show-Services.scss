@@ -85,6 +85,19 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .container-card {
+    .card-service,
+    .card-service.reverse {
+      .right {
+        .img-container {
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .container-card {
     .card-service,

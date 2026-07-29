@@ -54,6 +54,16 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .hero-services {
+    padding: 50px;
+
+    p {
+      max-width: 370px;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .hero-services {
     flex-direction: column;

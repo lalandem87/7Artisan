@@ -1,0 +1,45 @@
+.mentions-legales {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 40px;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #f97316;
+  }
+
+  section {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e4e7ed;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #1a1a1a;
+    }
+
+    p {
+      color: #6b7280;
+      line-height: 1.8;
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #f97316;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

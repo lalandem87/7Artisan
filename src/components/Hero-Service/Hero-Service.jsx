@@ -19,7 +19,7 @@ export function HeroServices() {
         <div className="container-card">
           {catServices.map((cs) => (
             <a
-              href={`#${cs.id}`}
+              href={`#service-${cs.id}`}
               key={cs.id}
               className={`card ${kindService === cs.id ? "active" : ""}`}
               onClick={() => setKindService(cs.id)}

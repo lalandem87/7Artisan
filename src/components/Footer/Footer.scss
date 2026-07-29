@@ -74,9 +74,13 @@ footer {
             align-items: center;
             list-style: none;
 
-            svg {
-              height: 15px;
-              width: 15px;
+            a {
+              text-decoration: none;
+              color: #fff9;
+
+              &:hover {
+                color: var(--maincolor);
+              }
             }
           }
         }
@@ -124,6 +128,14 @@ footer {
     .certifications {
       display: flex;
       gap: 20px;
+
+      a {
+        color: #fff9;
+
+        &:hover {
+          color: var(--maincolor);
+        }
+      }
     }
   }
 }
@@ -137,8 +149,6 @@ footer {
       flex-direction: column;
       gap: 40px;
       padding-bottom: 25px;
-      .right {
-      }
     }
 
     .bottom {

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Footer.scss";
 import {
   SiInstagram,
@@ -46,17 +47,37 @@ export function Footer() {
           <div className="list">
             <h4>Nos Services</h4>
             <ul>
-              <li>Rénovation Intérieure</li>
-              <li>Aménagement Extérieur</li>
-              <li>Isolation & Thermique</li>
-              <li>Peinture & Finitions</li>
+              <li>
+                <NavLink to="/services#service-0">
+                  Rénovation Intérieure
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/services#service-1">
+                  Aménagement Extérieur
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/services#service-2">
+                  Isolation & Thermique
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/services#service-3">Peinture & Finitions</NavLink>
+              </li>
             </ul>
           </div>
           <div className="list">
             <h4>Contact</h4>
             <ul>
-              <li>📞 06 62 79 14 43</li>
-              <li>✉️ 7artisan87100@gmail.com</li>
+              <li>
+                <a href="tel:0662791443">📞 06 62 79 14 43</a>
+              </li>
+              <li>
+                <a href="mailto:7artisan87100@gmail.com">
+                  ✉️ 7artisan87100@gmail.com
+                </a>
+              </li>
               <li>📍 Limoges & International</li>
             </ul>
           </div>
@@ -75,9 +96,11 @@ export function Footer() {
         </div>
       </div>
       <div className="bottom">
-        <p>© 2026 7Artisan. Tous droits réservés.</p>
+        <p>© {new Date().getFullYear()} 7Artisan. Tous droits réservés.</p>
         <div className="certifications">
-          <div className="">Qualifié</div>
+          <NavLink to="/mentions-legales" onClick={() => scrollTo(0, 0)}>
+            Mentions légales
+          </NavLink>
           <div className=""></div>
           <div className="">Assurance décennale</div>
         </div>

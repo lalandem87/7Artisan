@@ -13,7 +13,7 @@ export function ShowServices() {
           return (
             <div
               className={`card-service ${service.id % 2 !== 0 ? "reverse" : ""}`}
-              id={service.id}
+              id={`service-${service.id}`}
               key={service.id}
             >
               <div className="left">

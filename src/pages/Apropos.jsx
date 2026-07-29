@@ -5,6 +5,7 @@ import { SecValeurs } from "../components/Sec-Valeurs/Sec-Valeurs";
 import { Avis } from "../components/Avis/Avis";
 import { BarreContact } from "../components/Barre-Contact/Barre-Contact";
 import data from "../../backend/data.json";
+import { BarreInfoTablet } from "../components/Barre-Info-Tablet/Barre-Info-Tablet";
 
 const dataAvis = data["avis"];
 
@@ -13,6 +14,7 @@ export function Apropos() {
     <>
       <HeroApropos />
       <BarreInfo />
+      <BarreInfoTablet />
       <BarreInfoMobile />
       <SecValeurs />
       <Avis

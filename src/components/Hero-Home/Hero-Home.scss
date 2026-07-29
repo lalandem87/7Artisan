@@ -149,6 +149,20 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .hero-container {
+    padding: 96px 50px;
+
+    .hero-left {
+      gap: 20px;
+    }
+  }
+
+  .hero-right {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-container {
     height: 100%;

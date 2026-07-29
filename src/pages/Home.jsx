@@ -5,6 +5,7 @@ import { Expertise } from "../components/Expertise/Expertise";
 import { Avis } from "../components/Avis/Avis";
 import { BarreContact } from "../components/Barre-Contact/Barre-Contact";
 import data from "../../backend/data.json";
+import { BarreInfoTablet } from "../components/Barre-Info-Tablet/Barre-Info-Tablet";
 
 const dataAvis = data["avis"];
 
@@ -13,6 +14,7 @@ export function Home() {
     <>
       <HeroHome />
       <BarreInfo />
+      <BarreInfoTablet />
       <BarreInfoMobile />
       <Expertise />
       <Avis

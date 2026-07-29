@@ -1,12 +1,13 @@
-.barre-info-mobile {
-  flex-direction: column;
+.barre-info-tablet {
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
   background-color: #0d1117;
 
   &-wrapper {
     display: flex;
     gap: 12px;
     padding: 20px;
-    border: 1px solid #fff;
 
     &-logo {
       display: flex;

@@ -55,6 +55,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .barre-info {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .barre-info {
     display: none;

@@ -58,6 +58,19 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .barre-contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 50px;
+
+    .left {
+      gap: 5px;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .barre-contact {
     padding: 40px 20px;

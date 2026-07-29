@@ -4,7 +4,7 @@ export function BarreInfoTablet() {
   return (
     <section
       className="barre-info-tablet"
-      style={{ display: window.innerWidth <= 1024 ? "flex" : "none" }}
+      style={{ display: window.innerWidth >= 1024 ? "flex" : "none" }}
     >
       <div className="barre-info-tablet-wrapper">
         <div className="barre-info-tablet-wrapper-logo lug">🧰</div>

@@ -43,11 +43,13 @@
         align-items: center;
         background-color: #ffffff22;
         padding: 12px 16px;
-        border-radius: 16px;
+        border-radius: 24px;
         color: #fff;
 
-        &.active {
-          color: var(--maincolor);
+        &.active,
+        &:hover {
+          font-weight: bold;
+          background-color: var(--maincolor);
         }
       }
     }

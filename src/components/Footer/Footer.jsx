@@ -71,14 +71,14 @@ export function Footer() {
             <h4>Contact</h4>
             <ul>
               <li>
-                <a href="tel:0662791443">📞 06 62 79 14 43</a>
+                <a href="tel:0662791443">06 62 79 14 43</a>
               </li>
               <li>
                 <a href="mailto:7artisan87100@gmail.com">
-                  ✉️ 7artisan87100@gmail.com
+                  7artisan87100@gmail.com
                 </a>
               </li>
-              <li>📍 Limoges & International</li>
+              <li>Limoges & International</li>
             </ul>
           </div>
           <div className="list">

@@ -21,7 +21,7 @@
       margin-bottom: 32px;
 
       span:first-child {
-        color: #f97316;
+        color: var(--maincolor);
       }
     }
 
@@ -35,7 +35,7 @@
       width: 100%;
 
       &.active {
-        color: #f97316;
+        color: var(--maincolor);
       }
     }
 
@@ -46,7 +46,7 @@
       gap: 8px;
       margin-top: auto;
       padding: 16px;
-      background-color: #f97316;
+      background-color: var(--maincolor);
       color: #fff;
       border-radius: 24px;
       font-weight: bold;

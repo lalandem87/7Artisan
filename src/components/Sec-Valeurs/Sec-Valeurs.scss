@@ -19,7 +19,7 @@
   }
 
   .container-card {
-    max-width: 1440px;
+    max-width: 1214px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -35,14 +35,9 @@
       padding: 28px;
       background-color: #fff;
 
-      .icon-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 48px;
-        width: 48px;
-        border-radius: 50%;
-        font-size: 21px;
+      &-number {
+        font-size: 32px;
+        font-weight: bold;
       }
 
       p {

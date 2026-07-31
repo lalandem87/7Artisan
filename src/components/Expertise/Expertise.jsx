@@ -17,14 +17,26 @@ export function Expertise() {
           return (
             <div className="card" key={index}>
               <div
-                className="icon-wrapper"
-                style={{ backgroundColor: expertise.bg }}
+                className="badge"
+                style={{
+                  color: expertise.badge.color,
+                  backgroundColor: expertise.badge.backcolor,
+                }}
               >
-                {expertise.icon}
+                {expertise.badge.name}
               </div>
-              <h3>{expertise.title}</h3>
-              <p>{expertise.desc}</p>
-              <Link to="/services">
+              <div className="card_infos">
+                <h3>{expertise.title}</h3>
+                <p>{expertise.desc}</p>
+                <ul>
+                  {expertise.list.map((l) => (
+                    <li>
+                      <em style={{ color: expertise.badge.color }}>—</em> {l}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <Link to={`/services${expertise.link}`}>
                 En savoir plus <ArrowRight size={16} />
               </Link>
             </div>

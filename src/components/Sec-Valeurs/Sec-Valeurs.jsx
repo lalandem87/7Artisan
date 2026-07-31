@@ -11,15 +11,17 @@ export function SecValeurs() {
       <div className="container-card">
         {dataValeurs.map((valeur, index) => {
           return (
-            <div className="card-valeur" key={valeur.id}>
-              <div
-                className="icon-wrapper"
-                style={{
-                  background: valeur["style-icon"].backcolor,
-                }}
+            <div
+              className="card-valeur"
+              key={valeur.id}
+              style={{ borderTop: `3px solid ${valeur.color}` }}
+            >
+              <span
+                className="card-valeur-number"
+                style={{ color: valeur.color }}
               >
-                {valeur.icon}
-              </div>
+                0{index + 1}
+              </span>
               <h3>{valeur.name}</h3>
               <p>{valeur.desc}</p>
             </div>

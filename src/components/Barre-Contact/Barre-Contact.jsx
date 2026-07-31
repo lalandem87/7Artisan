@@ -1,3 +1,4 @@
+import { Phone } from "lucide-react";
 import "./Barre-Contact.scss";
 import { Link } from "react-router-dom";
 
@@ -10,7 +11,7 @@ export function BarreContact({ title, sentence }) {
       </div>
       <div className="right">
         <a href="" className="btn-appl">
-          📞 Appeler maintenant
+          <Phone size={20} /> Appeler maintenant
         </a>
         <Link to="/contact" className="btn-form">
           Formulaire de contact

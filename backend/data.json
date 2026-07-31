@@ -1,4 +1,12 @@
 {
+  "stats": [
+    { "title": "20 ans", "desc": "d'expérience" },
+    { "title": "350+", "desc": "clients satisfaits" },
+    { "title": "4,9/5", "desc": "note moyenne" },
+    { "title": "500+", "desc": "projets réalisés" },
+    { "title": "87", "desc": "& International" }
+  ],
+
   "categories": [
     {
       "id": 0,
@@ -13,86 +21,86 @@
   "works": [
     {
       "imageUrl": "interieur1.JPG",
-      "categorie": { "name": "Intérieur", "color": "#F97316" },
+      "categorie": { "name": "Intérieur", "color": "#c35404" },
       "title": "Salle de bain marbre noir & blanc",
       "categorie_id": 0
     },
     {
       "imageUrl": "interieur2.JPG",
-      "categorie": { "name": "Intérieur", "color": "#F97316" },
+      "categorie": { "name": "Intérieur", "color": "#c35404" },
       "title": "Douche à l'italienne style verrière",
       "categorie_id": 0
     },
     {
       "imageUrl": "interieur3.JPG",
-      "categorie": { "name": "Intérieur", "color": "#F97316" },
+      "categorie": { "name": "Intérieur", "color": "#c35404" },
       "title": "Carrelage imitation parquet",
       "categorie_id": 0
     },
     {
       "imageUrl": "interieur4.JPG",
-      "categorie": { "name": "Intérieur", "color": "#F97316" },
+      "categorie": { "name": "Intérieur", "color": "#c35404" },
       "title": "Rénovation charpente & combles",
       "categorie_id": 0
     },
     {
       "imageUrl": "interieur5.JPG",
-      "categorie": { "name": "Intérieur", "color": "#F97316" },
+      "categorie": { "name": "Intérieur", "color": "#c35404" },
       "title": "Carrelage grand format brillant",
       "categorie_id": 0
     },
     {
       "imageUrl": "interieur6.JPG",
-      "categorie": { "name": "Intérieur", "color": "#F97316" },
+      "categorie": { "name": "Intérieur", "color": "#c35404" },
       "title": "Parquet chêne massif",
       "categorie_id": 0
     },
     {
       "imageUrl": "interieur7.JPG",
-      "categorie": { "name": "Intérieur", "color": "#F97316" },
+      "categorie": { "name": "Intérieur", "color": "#c35404" },
       "title": "Salle de bain PMR mosaïque",
       "categorie_id": 0
     },
 
     {
       "imageUrl": "exterieur.JPG",
-      "categorie": { "name": "Extérieur", "color": "#2563EB" },
+      "categorie": { "name": "Extérieur", "color": "#1547A0" },
       "title": "Terrasse carrelage imitation bois & gabions",
       "categorie_id": 1
     },
     {
       "imageUrl": "exterieur2.JPG",
-      "categorie": { "name": "Extérieur", "color": "#2563EB" },
+      "categorie": { "name": "Extérieur", "color": "#1547A0" },
       "title": "Terrasse travertin & pergola",
       "categorie_id": 1
     },
     {
       "imageUrl": "exterieur3.JPG",
-      "categorie": { "name": "Extérieur", "color": "#2563EB" },
+      "categorie": { "name": "Extérieur", "color": "#1547A0" },
       "title": "Terrasse carrelage gris avec escalier",
       "categorie_id": 1
     },
     {
       "imageUrl": "exterieur4.JPG",
-      "categorie": { "name": "Extérieur", "color": "#2563EB" },
+      "categorie": { "name": "Extérieur", "color": "#1547A0" },
       "title": "Terrasse résine & garde-corps inox",
       "categorie_id": 1
     },
     {
       "imageUrl": "exterieur5.JPG",
-      "categorie": { "name": "Extérieur", "color": "#2563EB" },
+      "categorie": { "name": "Extérieur", "color": "#1547A0" },
       "title": "Allée en dalles ardoise & graviers décoratifs",
       "categorie_id": 1
     },
     {
       "imageUrl": "exterieur6.JPG",
-      "categorie": { "name": "Extérieur", "color": "#2563EB" },
+      "categorie": { "name": "Extérieur", "color": "#1547A0" },
       "title": "Allée résine drainante courbe",
       "categorie_id": 1
     },
     {
       "imageUrl": "exterieur7.JPG",
-      "categorie": { "name": "Extérieur", "color": "#2563EB" },
+      "categorie": { "name": "Extérieur", "color": "#1547A0" },
       "title": "Tour de piscine en travertin",
       "categorie_id": 1
     }
@@ -100,28 +108,60 @@
 
   "expertise": [
     {
-      "icon": "🏠",
-      "bg": "#fcd4c3",
+      "badge": {
+        "name": "Rénovation",
+        "backcolor": "#FFF4EC",
+        "color": "#C05C0A"
+      },
       "title": "Rénovation Intérieure",
-      "desc": "Cuisine, SDB, cloisons, parquet et plâtrerie."
+      "desc": "Cuisine, salle de bain, cloisons, revêtements de sol et plafond.",
+      "list": [
+        "Cuisine & salle de bain",
+        "Cloisons & doublage",
+        "Parquet, carrelage, sol"
+      ],
+      "link": "#service-0"
     },
     {
-      "icon": "🌿",
-      "bg": "#c4daf2",
+      "badge": {
+        "name": "Extérieur",
+        "backcolor": "#EFF4FF",
+        "color": "#1547A0"
+      },
       "title": "Aménagement Extérieur",
-      "desc": "Terrasses, allées, clôtures et portails."
+      "desc": "Terrasses, allées, clôtures et portails durables et esthétiques.",
+      "list": [
+        "Terrasse bois & composite",
+        "Allées & clôtures",
+        "Portail & portillon"
+      ],
+      "link": "#service-1"
     },
     {
-      "icon": "🌡️",
-      "bg": "#eadeb2",
+      "badge": {
+        "name": "Isolation",
+        "backcolor": "#FFFBEB",
+        "color": "#0D1117"
+      },
       "title": "Isolation & Thermique",
-      "desc": "Combles, murs, planchers"
+      "desc": "Combles, murs, planchers. Solutions d'isolation de qualité.",
+      "list": ["Isolation des combles", "ITE / isolation des murs"],
+      "link": "#service-2"
     },
     {
-      "icon": "🎨",
-      "bg": "#c6dfca",
+      "badge": {
+        "name": "Finitions",
+        "backcolor": "#F7F8FA",
+        "color": "#6B7280"
+      },
       "title": "Peinture & Finitions",
-      "desc": "Enduits, béton ciré, faïence et décoration."
+      "desc": "Enduits, peintures et revêtements décoratifs de haute qualité.",
+      "list": [
+        "Peinture intérieure",
+        "Enduits & béton ciré",
+        "Faïence & carrelage"
+      ],
+      "link": "#service-3"
     }
   ],
 
@@ -222,55 +262,37 @@
   "valeurs": [
     {
       "id": 0,
-      "icon": "🛡️",
-      "style-icon": {
-        "backcolor": "#fcd4c3"
-      },
+      "color": "#F97316",
       "name": "Qualité & Rigueur",
       "desc": "Chaque chantier est suivi avec la même attention aux détails. Nous n'acceptons pas les approximations."
     },
     {
       "id": 1,
-      "icon": "⏱️",
-      "style-icon": {
-        "backcolor": "#c4daf2"
-      },
+      "color": "#2563EB",
       "name": "Respect des délais",
       "desc": "Nous planifions soigneusement chaque intervention et tenons nos engagements. Votre temps a de la valeur."
     },
     {
       "id": 2,
-      "icon": "€",
-      "style-icon": {
-        "backcolor": "#eadeb2"
-      },
+      "color": "#10B981",
       "name": "Transparence des prix",
       "desc": "Devis détaillé et gratuit. Aucun surcoût caché. Le prix annoncé est celui que vous payez."
     },
     {
       "id": 3,
-      "icon": "🌿",
-      "style-icon": {
-        "backcolor": "#c1e1c6"
-      },
+      "color": "#8B5CF6",
       "name": "Éco-responsabilité",
       "desc": "Nous privilégions des matériaux durables et des solutions à faible impact environnemental."
     },
     {
       "id": 4,
-      "icon": "🎧",
-      "style-icon": {
-        "backcolor": "#fcd4c3"
-      },
+      "color": "#F59E0B",
       "name": "Accompagnement",
       "desc": "Un interlocuteur unique du premier contact à la réception du chantier. Vous n'êtes jamais seul."
     },
     {
       "id": 5,
-      "icon": "⭐",
-      "style-icon": {
-        "backcolor": "#c4daf2"
-      },
+      "color": "#F97316",
       "name": "Satisfaction garantie",
       "desc": "Nous ne partons pas tant que vous n'êtes pas entièrement satisfait. C'est notre promesse."
     }

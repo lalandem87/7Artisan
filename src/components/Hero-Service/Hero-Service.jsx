@@ -24,7 +24,6 @@ export function HeroServices() {
               className={`card ${kindService === cs.id ? "active" : ""}`}
               onClick={() => setKindService(cs.id)}
             >
-              <span>{cs.icon}</span>
               {cs.label}
             </a>
           ))}

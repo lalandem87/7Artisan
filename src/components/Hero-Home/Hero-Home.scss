@@ -3,7 +3,7 @@
 }
 
 .hero-container {
-  height: calc(100vh - 21vh);
+  height: calc(100vh - 23vh);
   position: relative;
   display: flex;
   align-items: center;
@@ -178,6 +178,7 @@
 
       h1 {
         font-size: 40px;
+        max-width: 265px;
       }
 
       p {

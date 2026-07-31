@@ -1,5 +1,5 @@
 import { SiCursor } from "@icons-pack/react-simple-icons";
-import { Mail, Map, Navigation, Send, LockIcon } from "lucide-react";
+import { Map, Navigation, LockIcon } from "lucide-react";
 import { useRef, useState } from "react";
 import "./Form.scss";
 import emailjs from "@emailjs/browser";
@@ -12,24 +12,44 @@ export function Form() {
     "15 000 – 30 000 €",
     "> 30 000 €",
   ];
+  const [message, setMessage] = useState("");
+  const [formData, setFormData] = useState({
+    prenom: "",
+    nom: "",
+    phone: "",
+    email: "",
+    type: "",
+    codepostal: "",
+    budget: "",
+    desc: "",
+  });
+
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.currentTarget.name]: e.currentTarget.value,
+    });
+  };
 
   const formRef = useRef();
+
+  const isValid = Object.values(formData).every((value) => value.length > 0);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!isValid) {
+      return setMessage("Tous les champs doivent être remplis");
+    }
     emailjs
       .sendForm(
         "service_vh3mb7e",
         "template_ozu164b",
         formRef.current,
-        "K5MerjZpHE1Y-h3RX",
+        import.meta.env.VITE_EMAILJS_KEY,
       )
       .then(() => {
-        return alert("Message envoyé !");
-      })
-      .catch((e) => {
-        return alert(`Erreur: ${e}, réessayez.`);
+        return setMessage("Requête envoyéé");
       });
   };
   return (
@@ -39,29 +59,20 @@ export function Form() {
           <div className="coordonees-card">
             <h3>Nos coordonées</h3>
             <div className="wrapper">
-              <div className="wrapper-infos">
-                <div className="wrapper-infos-logo phone">📞</div>
-                <div className="wrapper-infos-info">
-                  <h4>Téléphone</h4>
-                  <p>06 62 79 14 43</p>
-                  <p>Lundi-Samedi 8h-18h</p>
-                </div>
+              <div className="wrapper-infos tel">
+                <h4 className="tel">Téléphone</h4>
+                <h5>06 62 79 14 43</h5>
+                <p>Lundi-Samedi 8h-18h</p>
               </div>
-              <div className="wrapper-infos">
-                <div className="wrapper-infos-logo mail">✉️</div>
-                <div className="wrapper-infos-info">
-                  <h4>Email</h4>
-                  <p>7artisan87100@gmail.com</p>
-                  <p>Réponse sous 24h</p>
-                </div>
+              <div className="wrapper-infos email">
+                <h4 className="email">Email</h4>
+                <h5>7artisan87100@gmail.com</h5>
+                <p>Réponse sous 24h</p>
               </div>
-              <div className="wrapper-infos">
-                <div className="wrapper-infos-logo mapin">📍</div>
-                <div className="wrapper-infos-info">
-                  <h4>Zone d'intervention</h4>
-                  <p>Limoges & International</p>
-                  <p>Région Limousin</p>
-                </div>
+              <div className="wrapper-infos intervention">
+                <h4 className="intervention">Zone d'intervention</h4>
+                <h5>Limoges & International</h5>
+                <p>Région Limousin</p>
               </div>
             </div>
           </div>
@@ -78,15 +89,15 @@ export function Form() {
             <h3>Certifications</h3>
             <ul>
               <li>
-                <div className="certif-card-logo award">🎖️</div>
+                <div className="certif-card-divider qualifie"></div>
                 Qualifié
               </li>
               <li>
-                <div className="certif-card-logo shield">🛡️</div>
+                <div className="certif-card-divider assurance"></div>
                 Assurance décennale
               </li>
               <li>
-                <div className="certif-card-logo check">✅</div>
+                <div className="certif-card-divider qualite"></div>
                 Qualité garantie
               </li>
             </ul>
@@ -103,6 +114,8 @@ export function Form() {
               <div className="row">
                 <label htmlFor="prenom">Prénom</label>
                 <input
+                  value={formData.prenom}
+                  onChange={handleInputChange}
                   type="text"
                   id="prenom"
                   name="prenom"
@@ -110,6 +123,8 @@ export function Form() {
                 />
                 <label htmlFor="nom">Nom</label>
                 <input
+                  value={formData.nom}
+                  onChange={handleInputChange}
                   type="text"
                   id="nom"
                   name="nom"
@@ -119,6 +134,8 @@ export function Form() {
               <div className="row">
                 <label htmlFor="phone">Téléphone</label>
                 <input
+                  value={formData.phone}
+                  onChange={handleInputChange}
                   type="tel"
                   name="phone"
                   id="phone"
@@ -126,6 +143,8 @@ export function Form() {
                 />
                 <label htmlFor="email">Email</label>
                 <input
+                  value={formData.email}
+                  onChange={handleInputChange}
                   type="email"
                   id="email"
                   name="email"
@@ -136,7 +155,12 @@ export function Form() {
 
             <div className="row">
               <label htmlFor="type">Type de travaux</label>
-              <select name="type" id="type">
+              <select
+                name="type"
+                id="type"
+                onChange={handleInputChange}
+                value={formData.type}
+              >
                 <option value="">Sélectionnez votre besoin</option>
                 <option value="interieur">Intérieur</option>
                 <option value="exterieur">Extérieur</option>
@@ -147,6 +171,8 @@ export function Form() {
             <div className="row">
               <label htmlFor="codepostal">Ville / Code postal</label>
               <input
+                value={formData.codepostal}
+                onChange={handleInputChange}
                 type="number"
                 id="codepostal"
                 name="codepostal"
@@ -156,13 +182,17 @@ export function Form() {
             <div className="row-buttons">
               <div className="row-buttons-title">Budget estimé</div>
               <div className="buttons">
+                <input type="hidden" name="budget" value={formData.budget} />
                 {budgets.map((b, index) => {
                   return (
                     <button
                       type="button"
                       key={index}
                       className={`budget-btn ${budget === b ? "active" : ""}`}
-                      onClick={() => setBudget(b)}
+                      onClick={() => {
+                        setBudget(b);
+                        setFormData({ ...formData, budget: b });
+                      }}
                     >
                       {b}
                     </button>
@@ -173,6 +203,8 @@ export function Form() {
             <div className="row">
               <label htmlFor="desc">Description du projet</label>
               <textarea
+                onChange={handleInputChange}
+                value={formData.desc}
                 name="desc"
                 id="desc"
                 placeholder="Décrivez votre projet : pièces concernées, superficie, travaux souhaités..."
@@ -180,14 +212,17 @@ export function Form() {
             </div>
 
             <div className="form-bottom">
-              <button type="submit">
-                <Send size={18} />
-                Envoyer ma demande de devis
-              </button>
+              <button type="submit">Envoyer ma demande de devis</button>
+
               <p>
                 <LockIcon size={18} /> Vos données sont protégées
               </p>
             </div>
+            <p
+              className={`message ${message.includes("envoy") ? "success" : "error"}`}
+            >
+              {message}
+            </p>
           </form>
         </div>
       </div>

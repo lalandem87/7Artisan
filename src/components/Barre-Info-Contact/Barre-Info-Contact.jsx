@@ -4,21 +4,26 @@ import "./Barre-Info-Contact.scss";
 export function BarreInfoContact() {
   return (
     <section className="barre-info-contact">
-      <div className="barre-info-contact-container">
-        <div className="barre-info-contact-container-logo">⏱️</div>
-        <p>Réponse sous 48h</p>
-      </div>
-      <div className="barre-info-contact-container">
-        <div className="barre-info-contact-container-logo">€</div>
-        <p>Devis 100% gratuit</p>
-      </div>
-      <div className="barre-info-contact-container">
-        <div className="barre-info-contact-container-logo">🤝</div>
-        <p>Sans engagement</p>
-      </div>
-      <div className="barre-info-contact-container">
-        <div className="barre-info-contact-container-logo">🛡️</div>
-        <p>Artisan assuré</p>
+      <div className="trust-bar">
+        <div className="trust-item">
+          <p className="trust-title">48h</p>
+          <p className="trust-desc">Réponse garantie</p>
+        </div>
+        <div className="separator" />
+        <div className="trust-item">
+          <p className="trust-title">100%</p>
+          <p className="trust-desc">Devis gratuit</p>
+        </div>
+        <div className="separator" />
+        <div className="trust-item">
+          <p className="trust-title">0€</p>
+          <p className="trust-desc">Sans engagement</p>
+        </div>
+        <div className="separator" />
+        <div className="trust-item">
+          <p className="trust-title">Assuré</p>
+          <p className="trust-desc">Artisan qualifié</p>
+        </div>
       </div>
     </section>
   );

@@ -83,6 +83,7 @@ export function HeroHome() {
         <form action="post" ref={formRef} onSubmit={handleSubmit}>
           <input
             type="text"
+            aria-label="Votre nom complet"
             placeholder="Votre nom complet"
             id="nom"
             name="nom"
@@ -91,6 +92,7 @@ export function HeroHome() {
           />
           <input
             type="tel"
+            aria-label="Votre téléphone"
             placeholder="Votre téléphone"
             id="phone"
             name="phone"
@@ -99,6 +101,7 @@ export function HeroHome() {
           />
           <select
             name="type"
+            aria-label="Type de travaux"
             id="type"
             onChange={handleInputChange}
             value={formData.type}

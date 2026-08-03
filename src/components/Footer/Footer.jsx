@@ -45,7 +45,7 @@ export function Footer() {
         </div>
         <div className="right">
           <div className="list">
-            <h4>Nos Services</h4>
+            <h3>Nos Services</h3>
             <ul>
               <li>
                 <NavLink to="/services#service-0">
@@ -68,7 +68,7 @@ export function Footer() {
             </ul>
           </div>
           <div className="list">
-            <h4>Contact</h4>
+            <h3>Contact</h3>
             <ul>
               <li>
                 <a href="tel:0662791443">06 62 79 14 43</a>
@@ -82,15 +82,15 @@ export function Footer() {
             </ul>
           </div>
           <div className="list">
-            <h4>Horaires</h4>
+            <h3>Horaires</h3>
             <ul>
               <li>Lundi – Vendredi : 8h – 18h</li>
               <li>Samedi : 8h – 18h</li>
               <li>Dimanche : Fermé</li>
-              <div className={`status ${isOpen ? "open" : "close"}`}>
+              <li className={`status ${isOpen ? "open" : "close"}`}>
                 <span className="dot"></span>
                 {isOpen ? "Ouvert" : "Fermé"}
-              </div>
+              </li>
             </ul>
           </div>
         </div>

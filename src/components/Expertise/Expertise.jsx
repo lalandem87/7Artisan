@@ -29,8 +29,8 @@ export function Expertise() {
                 <h3>{expertise.title}</h3>
                 <p>{expertise.desc}</p>
                 <ul>
-                  {expertise.list.map((l) => (
-                    <li>
+                  {expertise.list.map((l, index) => (
+                    <li key={index}>
                       <em style={{ color: expertise.badge.color }}>—</em> {l}
                     </li>
                   ))}

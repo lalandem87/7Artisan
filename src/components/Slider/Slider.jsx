@@ -19,7 +19,7 @@ export function Slider({ badge, title, works, colorspan }) {
           <h3>{title}</h3>
         </div>
         <div className="dots-wrapper">
-          {works.map((_, index) => {
+          {works.slice(0, works.length - 2).map((_, index) => {
             return (
               <div
                 className={`dot ${index === counter ? "active" : ""}`}
@@ -35,7 +35,7 @@ export function Slider({ badge, title, works, colorspan }) {
             <Fragment key={index}>
               <figure className="card-slider">
                 <img
-                  src={`../../../backend/images/realisations/${work.imageUrl}`}
+                  src={`/images/realisations/${work.imageUrl}`}
                   alt={work.title}
                 />
                 <div className="card-slider-info">
@@ -50,22 +50,27 @@ export function Slider({ badge, title, works, colorspan }) {
         })}
       </div>
       <div className="buttons-slider">
-        <button
-          onClick={() => {
-            setCounter((c) => Math.max(0, c - 1));
-          }}
-          id="arrow-left"
-        >
-          <ArrowLeft />
-        </button>
-        <button
-          onClick={() => {
-            setCounter((c) => Math.min(works.length - 3, c + 1));
-          }}
-          id="arrow-right"
-        >
-          <ArrowRight />
-        </button>
+        {counter > 0 && (
+          <button
+            onClick={() => {
+              setCounter((c) => Math.max(0, c - 1));
+            }}
+            id="arrow-left"
+          >
+            <ArrowLeft />
+          </button>
+        )}
+
+        {counter < works.length - 3 && (
+          <button
+            onClick={() => {
+              setCounter((c) => Math.min(works.length - 3, c + 1));
+            }}
+            id="arrow-right"
+          >
+            <ArrowRight />
+          </button>
+        )}
       </div>
       <div className="bottom-slider">
         {counter + 1} — {Math.min(counter + 3, works.length)} réalisations sur{" "}

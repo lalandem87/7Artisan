@@ -4,7 +4,7 @@
     { "title": "350+", "desc": "clients satisfaits" },
     { "title": "4,9/5", "desc": "note moyenne" },
     { "title": "500+", "desc": "projets réalisés" },
-    { "title": "87", "desc": "& International" }
+    { "title": "87", "desc": "& National" }
   ],
 
   "categories": [
@@ -131,7 +131,7 @@
       "title": "Aménagement Extérieur",
       "desc": "Terrasses, allées, clôtures et portails durables et esthétiques.",
       "list": [
-        "Terrasse bois & composite",
+        "Terrasse & dalle béton",
         "Allées & clôtures",
         "Portail & portillon"
       ],
@@ -158,7 +158,7 @@
       "desc": "Enduits, peintures et revêtements décoratifs de haute qualité.",
       "list": [
         "Peinture intérieure",
-        "Enduits & béton ciré",
+        "Enduits & Façade",
         "Faïence & carrelage"
       ],
       "link": "#service-3"
@@ -192,7 +192,7 @@
         ]
       },
 
-      "image-url": "../../../backend/images/services/services1.png"
+      "image-url": "/images/services/services1.png"
     },
     {
       "id": 1,
@@ -213,7 +213,7 @@
         ]
       },
 
-      "image-url": "../../../backend/images/services/services2.png"
+      "image-url": "/images/services/services2.png"
     },
     {
       "id": 2,
@@ -234,7 +234,7 @@
         ]
       },
 
-      "image-url": "../../../backend/images/services/services3.png"
+      "image-url": "/images/services/services3.png"
     },
     {
       "id": 3,
@@ -255,7 +255,7 @@
         ]
       },
 
-      "image-url": "../../../backend/images/services/services4.png"
+      "image-url": "/images/services/services4.png"
     }
   ],
 

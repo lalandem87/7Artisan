@@ -23,10 +23,7 @@ export function HeroApropos() {
       </div>
       <div className="right">
         <div className="img-container">
-          <img
-            src="../../../backend/images/hero-apropos.png"
-            alt="Image Hero Apropos"
-          />
+          <img src="/images/hero-apropos.png" alt="Image Hero Apropos" />
         </div>
       </div>
     </div>

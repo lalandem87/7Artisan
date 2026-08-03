@@ -8,7 +8,7 @@ export function MentionsLegales() {
       <section>
         <h2>Éditeur du site</h2>
         <p>Raison sociale : 7Artisan</p>
-        <p>Statut : Auto-entrepreneur / Entreprise individuelle</p>
+        <p>Statut : SAS</p>
         <p>Adresse : Limoges, France</p>
         <p>Téléphone : 06 62 79 14 43</p>
         <p>Email : 7artisan87100@gmail.com</p>

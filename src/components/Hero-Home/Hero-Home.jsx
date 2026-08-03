@@ -2,21 +2,47 @@ import "./Hero-Home.scss";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export function HeroHome() {
+  const [formData, setFormData] = useState({
+    nom: "",
+    phone: "",
+    type: "",
+  });
+  const [message, setMessage] = useState("");
+
   const formRef = useRef();
+
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.currentTarget.name]: e.currentTarget.value,
+    });
+  };
+
+  const isValid = Object.values(formData).every((val) => val.length > 0);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!isValid) {
+      setMessage("Veuillez remplir tous les champs !");
+      return;
+    }
+
     emailjs
-      .sendForm("SERVICE_ID", "TEMPLATE_ID", formRef.current, "PUBLIC_KEY")
+      .sendForm(
+        "service_ke121jm",
+        "template_r3ejj2x",
+        formRef.current,
+        import.meta.env.VITE_EMAILJS_KEY,
+      )
       .then(() => {
-        return alert("Message envoyé !");
+        return setMessage("Message envoyé");
       })
       .catch((e) => {
-        return alert(`Erreur: ${e}, réessayez.`);
+        return console.log(`Erreur: ${e}, réessayez.`);
       });
   };
   return (
@@ -49,9 +75,28 @@ export function HeroHome() {
         <div className="title">Réponse sous 48h</div>
         <p>Décrivez votre projet, nous vous rappelons rapidement.</p>
         <form action="post" ref={formRef} onSubmit={handleSubmit}>
-          <input type="text" placeholder="Votre nom complet" id="nom" />
-          <input type="tel" placeholder="Votre téléphone" id="phone" />
-          <select name="type" id="type">
+          <input
+            type="text"
+            placeholder="Votre nom complet"
+            id="nom"
+            name="nom"
+            onChange={handleInputChange}
+            value={formData.nom}
+          />
+          <input
+            type="tel"
+            placeholder="Votre téléphone"
+            id="phone"
+            name="phone"
+            onChange={handleInputChange}
+            value={formData.phone}
+          />
+          <select
+            name="type"
+            id="type"
+            onChange={handleInputChange}
+            value={formData.type}
+          >
             <option value="">Type de travaux</option>
             <option value="interieur">Intérieur</option>
             <option value="exterieur">Extérieur</option>
@@ -59,6 +104,13 @@ export function HeroHome() {
             <option value="peinture">Peinture & Finitions</option>
           </select>
           <button type="submit">Envoyer ma demande</button>
+          {message && (
+            <p
+              className={`message ${message.includes("envoy") ? "success" : "error"}`}
+            >
+              {message}
+            </p>
+          )}
         </form>
       </div>
     </div>

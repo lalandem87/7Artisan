@@ -43,13 +43,13 @@ export function Form() {
     }
     emailjs
       .sendForm(
-        "service_vh3mb7e",
+        "service_ke121jm",
         "template_ozu164b",
         formRef.current,
         import.meta.env.VITE_EMAILJS_KEY,
       )
       .then(() => {
-        return setMessage("Requête envoyéé");
+        return setMessage("Requête envoyée");
       });
   };
   return (

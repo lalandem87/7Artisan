@@ -20,86 +20,86 @@
 
   "works": [
     {
-      "imageUrl": "interieur1.JPG",
+      "imageUrl": "interieur1.webp",
       "categorie": { "name": "Intérieur", "color": "#c35404" },
       "title": "Salle de bain marbre noir & blanc",
       "categorie_id": 0
     },
     {
-      "imageUrl": "interieur2.JPG",
+      "imageUrl": "interieur2.webp",
       "categorie": { "name": "Intérieur", "color": "#c35404" },
       "title": "Douche à l'italienne style verrière",
       "categorie_id": 0
     },
     {
-      "imageUrl": "interieur3.JPG",
+      "imageUrl": "interieur3.webp",
       "categorie": { "name": "Intérieur", "color": "#c35404" },
       "title": "Carrelage imitation parquet",
       "categorie_id": 0
     },
     {
-      "imageUrl": "interieur4.JPG",
+      "imageUrl": "interieur4.webp",
       "categorie": { "name": "Intérieur", "color": "#c35404" },
       "title": "Rénovation charpente & combles",
       "categorie_id": 0
     },
     {
-      "imageUrl": "interieur5.JPG",
+      "imageUrl": "interieur5.webp",
       "categorie": { "name": "Intérieur", "color": "#c35404" },
       "title": "Carrelage grand format brillant",
       "categorie_id": 0
     },
     {
-      "imageUrl": "interieur6.JPG",
+      "imageUrl": "interieur6.webp",
       "categorie": { "name": "Intérieur", "color": "#c35404" },
       "title": "Parquet chêne massif",
       "categorie_id": 0
     },
     {
-      "imageUrl": "interieur7.JPG",
+      "imageUrl": "interieur7.webp",
       "categorie": { "name": "Intérieur", "color": "#c35404" },
       "title": "Salle de bain PMR mosaïque",
       "categorie_id": 0
     },
 
     {
-      "imageUrl": "exterieur.JPG",
+      "imageUrl": "exterieur.webp",
       "categorie": { "name": "Extérieur", "color": "#1547A0" },
       "title": "Terrasse carrelage imitation bois & gabions",
       "categorie_id": 1
     },
     {
-      "imageUrl": "exterieur2.JPG",
+      "imageUrl": "exterieur2.webp",
       "categorie": { "name": "Extérieur", "color": "#1547A0" },
       "title": "Terrasse travertin & pergola",
       "categorie_id": 1
     },
     {
-      "imageUrl": "exterieur3.JPG",
+      "imageUrl": "exterieur3.webp",
       "categorie": { "name": "Extérieur", "color": "#1547A0" },
       "title": "Terrasse carrelage gris avec escalier",
       "categorie_id": 1
     },
     {
-      "imageUrl": "exterieur4.JPG",
+      "imageUrl": "exterieur4.webp",
       "categorie": { "name": "Extérieur", "color": "#1547A0" },
       "title": "Terrasse résine & garde-corps inox",
       "categorie_id": 1
     },
     {
-      "imageUrl": "exterieur5.JPG",
+      "imageUrl": "exterieur5.webp",
       "categorie": { "name": "Extérieur", "color": "#1547A0" },
       "title": "Allée en dalles ardoise & graviers décoratifs",
       "categorie_id": 1
     },
     {
-      "imageUrl": "exterieur6.JPG",
+      "imageUrl": "exterieur6.webp",
       "categorie": { "name": "Extérieur", "color": "#1547A0" },
       "title": "Allée résine drainante courbe",
       "categorie_id": 1
     },
     {
-      "imageUrl": "exterieur7.JPG",
+      "imageUrl": "exterieur7.webp",
       "categorie": { "name": "Extérieur", "color": "#1547A0" },
       "title": "Tour de piscine en travertin",
       "categorie_id": 1
@@ -192,7 +192,7 @@
         ]
       },
 
-      "image-url": "/images/services/services1.png"
+      "image-url": "/images/services/services1.webp"
     },
     {
       "id": 1,
@@ -213,7 +213,7 @@
         ]
       },
 
-      "image-url": "/images/services/services2.png"
+      "image-url": "/images/services/services2.webp"
     },
     {
       "id": 2,
@@ -234,7 +234,7 @@
         ]
       },
 
-      "image-url": "/images/services/services3.png"
+      "image-url": "/images/services/services3.webp"
     },
     {
       "id": 3,
@@ -255,7 +255,7 @@
         ]
       },
 
-      "image-url": "/images/services/services4.png"
+      "image-url": "/images/services/services4.webp"
     }
   ],
 

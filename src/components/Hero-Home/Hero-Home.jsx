@@ -48,6 +48,12 @@ export function HeroHome() {
   return (
     <div className="hero-home">
       <div className="hero-container">
+        <img
+          src="/images/hero-home.webp"
+          alt="Image Hero"
+          className="hero-bg"
+          fetchPriority="high"
+        />
         <div className="hero-left">
           <div className="badge">
             Artisan Qualifié — Limoges & International

@@ -3,6 +3,7 @@ import { BarreContact } from "../components/Barre-Contact/Barre-Contact";
 import { Slider } from "../components/Slider/Slider.jsx";
 import { useState } from "react";
 import data from "../../backend/data.json";
+import { Helmet } from "react-helmet-async";
 
 const insideWorks = data["works"].filter(
   (work) => work.categorie.name === "Intérieur",
@@ -14,6 +15,14 @@ const outsideWorks = data["works"].filter(
 export function Realisations() {
   return (
     <>
+      <Helmet>
+        <title>Nos Réalisations — 7Artisan Limoges</title>
+        <meta
+          name="description"
+          content="Découvrez nos chantiers récents — rénovation de salles de bain, terrasses, isolation et peinture à Limoges et alentours."
+        />
+        <link rel="canonical" href="https://7artisan.fr/realisations" />
+      </Helmet>
       <HeroReaCont
         badge="Notre Portfolio"
         title="Nos Réalisations"
